@@ -17,6 +17,9 @@ for (i = 0; i < listaAdmin.length; i++) {
 //------LISTA COGNOME--------
 var cognomeUtente = prompt('Inserisci il tuo Cognome');
 
+cognomeUtente = cognomeUtente.charAt(0).toUpperCase() + cognomeUtente.slice();
+
+
 
 var listaCognomi = ['Bianchi', 'Zeri', 'Rossi', 'Verdi', 'Gialli'];
 
@@ -34,6 +37,20 @@ for (i = 0; i < listaCognomi.length; i++) {
         document.getElementById('lista').innerHTML += ' ' + (i + 1);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
