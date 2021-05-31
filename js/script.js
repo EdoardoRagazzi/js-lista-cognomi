@@ -17,13 +17,25 @@ for (i = 0; i < listaAdmin.length; i++) {
 //------LISTA COGNOME--------
 var cognomeUtente = prompt();
 
+
 var listaCognomi = ['Bianchi', 'Zeri', 'Rossi', 'Verdi', 'Gialli'];
+
+
 
 console.log(listaCognomi);
 
 listaCognomi.push(cognomeUtente);
 
 listaCognomi.sort();
+
+document.getElementById('lista').innerHTML += listaCognomi;
+
+for (i = 0; i < listaCognomi.length; i++) {
+    if (cognomeUtente == listaCognomi[i]) {
+        document.getElementById('lista').innerHTML = listaCognomi[i];
+    }
+}
+
 
 
 
